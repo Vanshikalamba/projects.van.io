@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HanDkart</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<style type="text/css">
+	.header{
+		background-color: white;
+	}
+	.second{
+		background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk7GnPVX0016fsAG2QIlaXXwMwPsdH6n-8DIwSKGv91Czhh-Pe&s");
+
+	}
+	body{
+	background-color:  #ffe6ff;
+
+	}
+  
+</style>
+</head>
+<body>
+<div class="header">
+<button class="btn  float-right " id="largest" style="background-color: white">India's Largest Tribal Product Website</button>
+<button class="btn  float-left " id="largest" style="background-color: white" >Call us on - 987654344355</button>
+</div>
+
+	<div class="navigation" style="padding-top: 40px">
+	<nav class="navbar navbar-expand-sm navbar-light " style="background-color:  #ff5099 ; height: 60;">
+
+		<img src="image\upper logo.jpg" width="80" height="50" >
+  <a class="navbar-brand" href="#" style="padding-left: 10px"><b>HanDkart</b></a>
+  <form class="form-inline" name="search-form" method="get">
+    <input class="form-control mr-sm-3 search-field" type="search" placeholder="Search" aria-label="Search"  style="width: 200">
+    <button class="btn btn-outline-light my-2 my-sm-0 " type="submit" >Search</button>
+  </form>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button><br>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link float-right" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link float-right" href="#">Favourites</a>
+      </li>
+      <li class="nav-item dropdown">
+        <button class="nav-link btn btn-outline-light btn-bg btn-block mr-auto dropdown-toggle" data-toggle="dropdown" id="navbardrop"  style="background-color: #e6e6e6;margin-right: 20%;"  >Sell on HanDkart
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="seller_info.html"> Register Sellers </a>
+        <a class="dropdown-item" href="add_product.html">Add Product Info</a><br>
+        
+          </div>
+      
+	</ul>
+	
+    <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+<button class="nav-link btn btn-outline-light btn-bg btn-block mr-auto dropdown-toggle" data-toggle="dropdown" id="navbardrop"  style="background-color: #e6e6e6;margin-right: 20%;"  >Sign-up
+  <div class="dropdown-menu">
+    <a class="dropdown-item">Your Account </a>
+<a class="dropdown-item">My Orders</a>
+<a class="dropdown-item" href="sign-in11.html">Register</a>
+  </div>
+
+</button>
+        </li>
+      
+		<li class="nav-item">
+			
+<button class="nav-link btn btn-outline-light btn-bg btn-block mr-auto" style="background-color: #e6e6e6"  href="#" data-target="#button" data-toggle="modal"> Login HanDkart</button>
+<div class="modal fade"  id="button" aria-labelledby="exampleModalLongTitle">
+	<div class="modal-dialog" >
+		<div class="modal-content" >
+			<div class="modal-header">
+			<h2 style="font-style:bold;"> Login hanDkart</h2>	
+			</div>
+			<div class="modal-body">
+				<form name="login-form" method="post" action="login" class="login-form">
+					<div class="form-group">
+						<label for="email">Mobile No.</label>
+						<input type="tel" pattern="[0-9]{10}" title="Please Add A Valid Mobile no. of 10 Digits" class="form-control" id="email" placeholder="email">
+					</div>
+					<div>
+						<label for="password">Password</label>
+						<input type="password" id="password" placeholder="Password" class="form-control">
+						
+					</div>
+					<div class="form-check">
+						<label class="form-check-label"></label>
+						<input type="checkbox" name="remember" class="form-check-input">remember me
+					</div>
+					<button class="btn btn-primary" type="submit" style="text-align: center; align-self: center; margin-left: 200px;">Login</button>
+				</form>
+			
+				
+			</div>	
+			
+			
+		</div>
+		
+	</div>
+	
+</div>
+ 	</li>
+ </ul>
+  </div>
+</nav>
+<nav>
+	
+</nav>
+<div class="container" style="width: 1400 ; height: 800; padding-top: 5px">
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="image/36.jpg" class="d-block w-100" alt="..." width="1200" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="image/38.jpg" class="d-block w-100" alt="..." width="800" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="image/42.jpg" class="d-block w-100" alt="..." width="800" height="500">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+</div>
+<h5 style="text-align: center;padding: 10px">Popular Cloth Collection</h5>
+<img src="image/20.jpg" width="300" height="300" style="padding-left: 60px" class="image">
+  
+<img src="image/21.jpg" width="300" height="300" style="padding-left: 30px">
+<img src="image/22.jpg"width="300" height="300" style="padding-left: 30px">
+<img src="image/23.jpg" width="300" height="300" style="padding-left: 30px">
+<img src="image/19.jpg" height="300" style="padding-left: 30px">
+<h5 style="text-align: center;padding: 10px">Popular Craft Collection</h5>
+<img src="image/15.jpg" width="300" height="300" style="padding-left: 60px">
+<img src="image/16.jpg" width="300" height="300" style="padding-left: 30px">
+<img src="image/17.jpg"width="300" height="300" style="padding-left: 30px">
+<img src="image/18.jpg" width="300" height="300" style="padding-left: 30px">
+<img src="image/26.jpg" width="300" height="300" style="padding-left: 30px">
+<h5 style="text-align: center;padding: 10px">Popular Jewellery Collection</h5>
+<img src="image/1.jpg" width="300" height="300" style="padding-left: 60px">
+<img src="image/3.jpg" width="300" height="300" style="padding-left: 30px">
+<img src="image/5.jpg"width="300" height="300" style="padding-left: 30px">
+<img src="image/7.jpg" width="300" height="300" style="padding-left: 30px">
+<img src="image/9.jpg" width="300" height="300" style="padding-left: 30px">
+</body>
+</html>

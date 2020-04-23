@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<style>
+    	body{
+	background-color:  #ffe6ff;
+
+	}
+    .slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 20px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+.container-fluid
+{
+    grid-row-gap: 50px;
+    grid-column-gap: 20px;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 240px;
+  height: 350px;
+  padding-top: 10px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: bottom;
+  width: 200px;
+}
+
+.contain:hover .image {
+  opacity: 0.3;
+}
+
+.contain:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color:rgb(247, 149, 103);
+  color: rgb(12, 11, 11);
+  font-size: 22 px;
+  padding: 12px 26px;
+  font-style:italic;
+}
+</style>
+    </head> 
+    <body>
+        <div class="header">
+            <button class="btn  float-right " id="largest" style="background-color: white">India's Largest Tribal Product Website</button>
+            <button class="btn  float-left " id="largest" style="background-color: white" >Call us on - 987654344355</button>
+            </div>
+            
+                <div class="navigation" style="padding-top: 40px">
+                <nav class="navbar navbar-expand-sm navbar-light " style="background-color:  #ff5099 ; height: 60;">
+            
+                    <img src="image\upper logo.jpg" width="80" height="50" >
+              <a class="navbar-brand" href="#" style="padding-left: 10px"><b>HanDkart</b></a>
+              <form class="form-inline" name="search-form" method="get">
+                <input class="form-control mr-sm-3 search-field" type="search" placeholder="Search" aria-label="Search"  style="width: 200">
+                <button class="btn btn-outline-light my-2 my-sm-0 " type="submit" >Search</button>
+              </form>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button><br>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link float-right" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link float-right" href="#">Favourites</a>
+                  </li>
+                </ul>
+                
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+            <button class="nav-link btn btn-outline-light btn-bg btn-block mr-auto" style="background-color: #e6e6e6;margin-right: 20%;"  ><a href="sign-in11.html">sign-up</a></button>
+                    </li>
+                  
+                    <li class="nav-item">
+                        
+            <button class="nav-link btn btn-outline-light btn-bg btn-block mr-auto" style="background-color: #e6e6e6"  href="#" data-target="#button" data-toggle="modal">Account and sign in</button>
+            <div class="modal fade"  id="button" aria-labelledby="exampleModalLongTitle">
+                <div class="modal-dialog" >
+                    <div class="modal-content" >
+                        <div class="modal-header">
+                        <h2 style="font-style:bold;"> Login In hanDkart</h2>	
+                        </div>
+                        <div class="modal-body">
+                            <form name="login-form" method="post" action="login" class="login-form">
+                                <div class="form-group">
+                                    <label for="email">Email Id</label>
+                                    <input type="email" class="form-control" id="email" placeholder="email">
+                                </div>
+                                <div>
+                                    <label for="password">Password</label>
+                                    <input type="password" id="password" placeholder="Password" class="form-control">
+                                    
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label"></label>
+                                    <input type="checkbox" name="remember" class="form-check-input">remember me
+                                </div>
+                                <button class="btn btn-primary" type="submit" style="text-align: center; align-self: center; margin-left: 200px;">Login</button>
+                            </form>
+                        
+                            
+                        </div>	
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+                 </li>
+             </ul>
+              </div>
+            </nav>
+                </div>
+
+            <div class="container-fluid">
+            <div class="rows" style="padding-top: 10px ;">
+                    <div class="col-sm-1 col-md-4 col-lg-2" style="background-color: white;">
+                        <img src="image/38.jpg" style="width: 200px; height: 200px; padding-top: 20px;" >
+                        <h3>Filter</h3><br>
+                        <h5>Categories</h5>
+                       
+                        <select>
+                            <option>
+                              Women's Clothing
+                            </option>
+                            <option>Men's Clothing</option>
+                            <option>Kid's Clothing</option>
+                            <option>Jwellery</option>
+                            <option>Home Decor</option>
+                            <option>Crafts</option>
+                            <option>Footwear</option>
+                        </select>
+                        <br>
+                        <br>
+                        <h5> Size</h5>
+                        <select>
+                            <option>S</option>
+                            <option>M
+                            </option>
+                            <option>L</option>
+                            <option>XS</option>
+                            <option>2XS</option>
+                            <option>3XS</option>
+                        </select>
+                        <br><br>
+                        <h5>Price</h5>
+                        <div class="slidecontainer">
+                            <input type="range" min="1" max="5000" value="300" class="slider" id="myRange">
+                            <p>Value: <span id="demo"></span></p>
+                          </div>
+                          
+                          <script>
+                          var slider = document.getElementById("myRange");
+                          var output = document.getElementById("demo");
+                          output.innerHTML = slider.value;
+                          
+                          slider.oninput = function() {
+                            output.innerHTML = this.value;
+                          }
+                          </script>
+                          <h5>Customer And Ratings</h5>
+                          <form action="/action_page.php">
+                            <input type="checkbox" name="rate1" value="4"> <span >4</span><span class="fa fa-star" "></span> & Above<br>
+                            <input type="checkbox" name="rate2" value="3"> <span >3</span><span class="fa fa-star" "></span> & Above  <br>
+                            <input type="checkbox" name="rate3" value="2"> <span >2</span><span class="fa fa-star" "></span> & Above <br> 
+                            <input type="checkbox" name="rate4" value="1"> <span >1</span><span class="fa fa-star" "></span> & Above<br>    
+                        </form><br>
+                        <h5>Discount</h5>
+                        <form action="/action_page.php">
+                            <input type="checkbox" name="dis1" value="50">50% or Above<br>
+                            <input type="checkbox" name="dis2" value="40">40% or Above<br>
+                            <input type="checkbox" name="dis3" value="30">30% or Above<br>
+                            <input type="checkbox" name="dis4" value="20">20% or Above<br>
+                            <input type="checkbox" name="dis5" value="10">10% or Above<br>
+                            <input type="checkbox" name="dis6" value="60">10% or Below<br>
+
+
+                        </form>
+                        <br>
+                        <h5>Pattern</h5>
+                        <form action="/action_page.php">
+                            <input type="checkbox" name="p1" value="1">Embroidered<br>
+                            <input type="checkbox" name="p2" value="2">Embellished<br>
+                            <input type="checkbox" name="p3" value="3">Floral Print<br>
+                            <input type="checkbox" name="p4" value="4">printed<br>
+                            <input type="checkbox" name="p5" value="5">solid<br>
+                            <input type="checkbox" name="p6" value="6">self designed<br>
+                            
+
+                        </form>
+                    </div>
+                    
+                       <div class="col-sm-2 col-md-5 col-lg-3 contain " style="background-color: rgb(251, 253, 253);" >
+<img src="image/55.jpg"  class="image">
+<div class="middle">
+    <div class="text" style="font-size: 13px;"><b> Women silk Embroidered cotton kurta and Bottom Material </b><br><i class="fa fa-inr"><b>2000</b></i></div>
+  </div>
+  <div style="font-size: 14px;color: rgb(241, 94, 36);text-align: center;  "><b> Buy at 40% discount</b></div>
+                       </div>
+                  
+                       <div class="col-sm-2 col-md-5 col-lg-3 contain " style="background-color: rgb(251, 253, 253);" >
+                        <img src="image/60.jpg"  class="image">
+                        <div class="middle">
+                            <div class="text" style="font-size: 13px;"><b> Women silk Embroidered cotton kurta and Bottom Material </b><br><i class="fa fa-inr"><b>1000</b></i></div>
+                          </div>
+                          <div style="font-size: 14px;color: rgb(241, 94, 36);text-align: center; "><b>Buy at 30% discount</b></div>
+                                               </div>
+
+
+                 <div class="col-sm-2 col-md-5 col-lg-3 contain " style="background-color: rgb(251, 253, 253);" >
+                    <img src="image/56.jpg"  class="image">
+                    <div class="middle">
+                <div class="text" style="font-size: 13px;"><b> Women silk Embroidered cotton kurta and Bottom Material </b><br><i class="fa fa-inr"><b>1500</b></i></div>
+                         </div>
+                            <div style="font-size: 14px;color: rgb(241, 94, 36);text-align: center; "><b>Buy at 50% discount</b></div>
+                                             </div>
+
+                                             <div class="col-sm-2 col-md-5 col-lg-3 contain " style="background-color: rgb(251, 253, 253);" >
+                                                <img src="image/59.jpg"  class="image">
+                                                <div class="middle">
+                                                    <div class="text" style="font-size: 13px;"><b> Women cotton Long Skirt fully embroiderd </b><br><i class="fa fa-inr"><b>1800</b></i></div>
+                                                  </div>
+                                                  <div style="font-size: 14px;color: rgb(241, 94, 36);text-align: center; "><b>Buy at 45% discount</b></div>
+                                                                       </div>
+
+
+
+                                                                       <div class="col-sm-2 col-md-5 col-lg-3 contain " style="background-color: rgb(251, 253, 253);" >
+                                                                        <img src="image/57.jpg"  class="image">
+                                                                        <div class="middle">
+                                                                            <div class="text" style="font-size: 13px;"><b> Women  Embroidered cotton kurta  </b><br><i class="fa fa-inr"><b>2500</b></i></div>
+                                                                          </div>
+                                                                          <div style="font-size: 14px;color: rgb(241, 94, 36);text-align: center; "><b>Buy at 60% discount</b></div>
+                                                                                               </div>                                                    
+                                                                                               <div class="col-sm-2 col-md-5 col-lg-3 contain " style="background-color: rgb(251, 253, 253);" >
+                                                                                                <img src="image/20.jpg"  class="image">
+                                                                                                <div class="middle">
+                                                                                                    <div class="text" style="font-size: 13px;"><b> Women saree full length latest design </b><br><i class="fa fa-inr"><b>2800</b></i></div>
+                                                                                                  </div>
+                                                                                                  <div style="font-size: 14px;color: rgb(241, 94, 36);text-align: center; "><b>women dress 40% discount</b></div>
+                                                                                                                       </div>
+            </div>
+           
+            </div>
+    </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Sign-in Page</title>
+    <style>
+        body {
+            background-color:rgb(247, 149, 103);
+            
+        }
+        
+        .fluid-container {
+            padding: 55px;
+        }
+        
+        .a {
+            padding: 40px;
+            margin-left: 250px;
+            background-color: black;
+            width: 500px;
+            border-radius: 30px;
+        }
+        
+        .a input {
+            background: none;
+            color: white;
+            overflow: hidden;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #F7F5F5;
+        }
+        
+        .abc {
+            border-radius: 20px;
+            margin-top: 15px;
+            color: blue;
+            background-color: #F7F5F5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <button class="btn  float-right " id="largest" style="background-color: white">India's Largest Tribal Product Website</button>
+        <button class="btn  float-left " id="largest" style="background-color: white" >Call us on - 987654344355</button>
+        </div>
+        
+            <div class="navigation" style="padding-top: 40px">
+            <nav class="navbar navbar-expand-sm navbar-light " style="background-color:  #ff5099 ; height: 60;">
+        
+                <img src="image\upper logo.jpg" width="80" height="50" >
+          <a class="navbar-brand" href="#" style="padding-left: 10px"><b>HanDkart</b></a>
+          <form class="form-inline" name="search-form" method="get">
+            <input class="form-control mr-sm-3 search-field" type="search" placeholder="Search" aria-label="Search"  style="width: 200">
+            <button class="btn btn-outline-light my-2 my-sm-0 " type="submit" >Search</button>
+          </form>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button><br>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link float-right" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link float-right" href="#">Favourites</a>
+              </li>
+            </ul>
+            
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+        <button class="nav-link btn btn-outline-light btn-bg btn-block mr-auto" style="background-color: #e6e6e6;margin-right: 20%;"  ><a href="sign-in11.html">sign-up</a></button>
+                </li>
+               
+                <li class="nav-item">
+                    
+        <button class="nav-link btn btn-outline-light btn-bg btn-block mr-auto" style="background-color: #e6e6e6"  href="#" data-target="#button" data-toggle="modal">Account and sign in</button>
+        <div class="modal fade"  id="button" aria-labelledby="exampleModalLongTitle">
+            <div class="modal-dialog" >
+                <div class="modal-content" >
+                    <div class="modal-header">
+                    <h2 style="font-style:bold;"> Login In hanDkart</h2>	
+                    </div>
+                    <div class="modal-body">
+                        <form name="login-form" method="post" action="login" class="login-form">
+                            <div class="form-group">
+                                <label for="email">Email Id</label>
+                                <input type="email" class="form-control" id="email" placeholder="email">
+                            </div>
+                            <div>
+                                <label for="password">Password</label>
+                                <input type="password" id="password" placeholder="Password" class="form-control">
+                                
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label"></label>
+                                <input type="checkbox" name="remember" class="form-check-input">remember me
+                            </div>
+                            <button class="btn btn-primary" type="submit" style="text-align: center; align-self: center; margin-left: 200px;">Login</button>
+                        </form>
+                    
+                        
+                    </div>	
+                    
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+             </li>
+         </ul>
+          </div>
+        </nav>
+
+    <div class="container">
+        <div class="fluid-container">
+<form name="sign-in-form" method="get" action="sign-in" class="sign-in-form"> 
+
+            <div class="col a">
+
+                <h3 style="color: rgb(7, 202, 170);margin-left:100px; "> Sign up in hanDkart</h3>
+                <br />
+                <span style="color:white;scroll-margin-top: 40px"> <b>Sign Up</b></span>
+                <h5 style="color: white;margin-top: 20px;"> Name</h5>
+                <input class="Name" id="name" type="Name" placeholder="Enter your full name" type="button" value="" />
+
+                <h5 style="color: white;margin-top:15px">Email id</h5>
+                <input id="password" class="password" type="password" placeholder="Enter email id" value="" />
+                <h5 style="color: white;margin-top: 20px;">Permanent Address</h5>
+                <input class="Name" id="name" type="Name" placeholder="Enter Permanent Address" type="button" value="" />
+                <h5 style="color: white;margin-top: 20px;">City</h5>
+                <input class="Name" id="name" type="Name" placeholder="Enter City" type="button" value="" />
+                <h5 style="color: white;margin-top: 20px;">State</h5>
+                <input class="Name" id="name" type="Name" placeholder="Enter State" type="button" value="" />
+                <h5 style="color: white;margin-top: 20px;">Password</h5>
+                <input class="Name" id="name" type="Name" placeholder="Set a strong password" type="button" value="" />
+                <br/>
+                <input style="color:white;margin-top:18px;height:15px;width:20px" type="checkbox" name="m" /><span style="color:white"> I agree at <b>terms and conditions </b></span>
+                <br />
+
+                <p style="text-align: center"> <button type="submit" id="submitbtn" class="btn btn-primary  abc" value="Sign Up" type="button" value="alert" onclick="a()" onclick="(b)" onclick="(c)">Sign Up</button></p>
+
+
+
+
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
